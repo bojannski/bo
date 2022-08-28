@@ -1,7 +1,7 @@
 # bo
  Brief 
 
- For this assignment I was meant to find code that has inspired me or that I want to learn. The instructions were to Create a GitHub repo, add your software research into the 'Code' tab of your GitHub repository, Add comments.  
+ For this assignment I was meant to find code that has inspired me or that I want to learn. The instructions were to Create a GitHub repository, add your software research into the 'Code' tab of your GitHub repository, Add comments.  
 
  Research and exploration 
 
