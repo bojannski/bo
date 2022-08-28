@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!--The code above starts with html and the code below is the beginning of css. The style statement shows that it's css, there is another way to keep the code clean which is by creating a seperate file just for css-->
 <style>
+  /*The code below is identifying the applications body size and margin */
 body {
   margin: 0;
   min-width: 250px;
 }
 
-/* Include the padding and border in an element's total width and height */
+
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* Style the list items */
+/*In the code below the list items are being styled*/
 ul li {
   cursor: pointer;
   position: relative;
@@ -29,31 +30,30 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
   
-  /* make the list items unselectable */
+  /*In the code below the list items are made to be unselectable*/
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* In the code below the odd list items are being set to a different color (zebra-stripes) */ 
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
+/* The code below is all about background colors for when it has and hasn't been clicked on*/
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/*In the code below a checkmark is being add when the list item is being clicked on*/
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -67,7 +67,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* The code below is the style of the close button */
 .close {
   position: absolute;
   right: 0;
@@ -80,7 +80,7 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+/* The code below is header styling */
 .header {
   background-color: #f44336;
   padding: 30px 40px;
@@ -88,14 +88,13 @@ ul li.checked::before {
   text-align: center;
 }
 
-/* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
+/*The input is being styled below */
 input {
   margin: 0;
   border: none;
@@ -106,7 +105,7 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* The add button is being styled below with and without the mouse hovering over it */
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -126,7 +125,7 @@ input {
 </style>
 </head>
 <body>
-
+<!--The css code has ended and now It's back to the html-->
 <div id="myDIV" class="header">
   <h2 style="margin:5px">My To Do List</h2>
   <input type="text" id="myInput" placeholder="Title...">
@@ -141,7 +140,7 @@ input {
   <li>Read a book</li>
   <li>Organize office</li>
 </ul>
-
+<!--The html code has ended and the javascript has began by using the <script> tag-->
 <script>
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -154,7 +153,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// The close button is being created in the code below
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -164,7 +163,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// A check is being created below when being clicked on the list 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -172,7 +171,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// In the code bellow when the add button is clicked a new list item is added
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -199,6 +198,6 @@ function newElement() {
   }
 }
 </script>
-
+<!--End of javascript-->
 </body>
 </html>
