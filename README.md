@@ -10,3 +10,7 @@
  Analysis and Evaluation 
 
 A major aspect of the code I believe should be changed is the way it is structured. The perfect thing to do is to create separate folders for each coding language and connect them to the main html file with a src link. This will improve readability and further adaptability and maintainability. The code itself works great and is simple and user friendly, but I believe it could have a few changes to it. The changes I would make are the colors and the design, I would like to implement a way for each item on the list to be a different color when added and when an item on the list is clicked it is removed rather than crossed off.  
+
+My code 
+
+For my code I submitted a project I created a few months ago that I felt could’ve been developed better. Although I believe it was decent for my first website and my first time coding, I believe I could improve on many factors of the website such as the look/ style, maybe I could have added some more JavaScript and truly created a functional website. 
